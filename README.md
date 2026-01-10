@@ -6,7 +6,7 @@ Rather than treating this solely as a mathematical exercise, I extended the anal
 
 ### What's in this repository
 - **Jupyter Notebook:** step-by-step analysis and findings (`diabetes.ipynb`)
-- **Data file:** `dirty_diabetes.csv`  
+- **Data file:** `diabetes_dirty.csv`  
 - **Images:** visuals  
 - **Requirements:** Python dependencies (`requirements.txt`)
 
