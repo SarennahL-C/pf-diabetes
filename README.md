@@ -5,7 +5,8 @@ This project applies **linear regression analysis** to a subset of the classic s
 Rather than treating this solely as a mathematical exercise, I extended the analysis to consider whether prediction and interpretation differ between male and female observations. This exploration suggested that **sex information contributes meaningfully to model outcomes**, with potential implications for understanding sex-specific testing and treatment strategies.
 
 ### What's in this repository
-- **Jupyter Notebook:** step-by-step analysis and findings (`diabetes.ipynb`)  
+- **Jupyter Notebook:** step-by-step analysis and findings (`diabetes.ipynb`)
+- **Data file:** `dirty_diabetes.csv`  
 - **Images:** visuals  
 - **Requirements:** Python dependencies (`requirements.txt`)
 
