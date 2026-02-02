@@ -51,4 +51,4 @@ This project blends data preparation with analytical modelling:
 
 ### Requirements
 
-Install the necessary Python dependencies with: `pip install -r requirements.txt`
+Install the required Python packages with: `pip install -r requirements.txt`
