@@ -1,54 +1,83 @@
-# Diabetes Regression Analysis: Exploring Predictors and Sex Differences
+# Diabetes Regression Analysis — Exploring Predictors and Sex Differences
 
-This project applies **linear regression analysis** to a subset of the classic scikit-learn Diabetes dataset, with a specific focus on understanding the impact of the **sex variable** on predicted disease progression. Completed as part of my data science bootcamp work, this project blends exploratory data analysis, regression modelling, and careful interpretation to uncover subtle patterns in biomedical data.
+This project applies **linear regression analysis** to a subset of the classic scikit-learn Diabetes dataset, with a specific focus on understanding the impact of the **sex variable** on predicted disease progression. The analysis combines exploratory data work, regression modelling, and careful interpretation to explore how biomedical predictors contribute to outcomes.
 
-Rather than treating this solely as a mathematical exercise, I extended the analysis to consider whether prediction and interpretation differ between male and female observations. This exploration suggested that **sex information contributes meaningfully to model outcomes**, with potential implications for understanding sex-specific testing and treatment strategies.
+Rather than treating this solely as a mathematical exercise, the project extends the core task by examining whether prediction and interpretation differ between male and female observations. The findings suggest that **sex information contributes meaningfully to model behaviour**, with potential implications for understanding sex-specific testing and treatment strategies.
 
-### What's in this repository
-- **Jupyter Notebook:** step-by-step analysis and findings (`diabetes.ipynb`)
-- **Data file:** `diabetes_dirty.csv`  
-- **Images:** visuals  
-- **Requirements:** Python dependencies (`requirements.txt`)
+---
 
-### Project Overview
+## What’s in this repository
 
-The Diabetes dataset includes ten feature variables (age, sex, body mass index, average blood pressure, and six blood serum measurements) and a quantitative measure of disease progression after one year (target variable).
+- **Jupyter Notebook:** full regression analysis (`diabetes.ipynb`)  
+- **Dataset:** `diabetes_dirty.csv`  
+- **Images:** visual summaries of model results  
+- **Requirements:** Python dependencies (`requirements.txt`)  
 
-The core task was to:
+---
 
-- Load and clean the dataset for regression analysis  
-- Build and evaluate a **linear regression model** to predict disease progression  
+## Project Context
 
-I extended the task to:
+The Diabetes dataset includes ten feature variables — age, sex, body mass index, average blood pressure, and six blood serum measurements — alongside a quantitative measure of disease progression one year after baseline.
 
-- Investigate the effect of including the **sex variable** on the model’s predictions  
-- Interpret patterns and implications from the regression coefficients
+The core task was to clean the dataset and build a **linear regression model** to predict disease progression. This project extends that task by explicitly examining the role of the sex variable and considering how its inclusion affects both model performance and interpretability.
 
-### Approach and Key Insights
+---
 
-This project blends data preparation with analytical modelling:
+## Approach Overview
 
-- **Data cleaning and transformation:** I prepared the dataset by checking for anomalies, confirming that features are correctly scaled and aligned for regression.
-- **Linear regression modelling:** I fit a regression model on key predictors to estimate their associations with disease progression.
-- **Sex variable evaluation:** By including and excluding the sex feature, I was able to observe how the presence of sex information altered model performance and interpretation — concluding that sex contributes meaningfully to variation in outcomes.
-- **Interpretation:** Rather than just reporting coefficients, I assessed how these predictors might relate to clinical considerations, and why distinguishing effects by sex can matter.
+The analysis follows a structured regression workflow:
 
-### Visual Summaries and Interpretation
+- Data inspection, cleaning, and validation  
+- Feature preparation and alignment for linear modelling  
+- Construction and evaluation of a baseline linear regression model  
+- Inclusion and exclusion of the sex variable to assess its impact  
+- Interpretation of coefficients and model behaviour  
 
-![Example scatter plot showing regression fit](regression_with_sex_information.jpg)  
-*Regression fit and residual patterns from the model developed from all patient data and including sex information.*
+Throughout the analysis, emphasis was placed on understanding *why* predictors matter, not just whether they improve numerical performance.
 
-![Feature importance or coefficient bar chart](compare_coefficients_all_models.jpg)  
-*Model coefficients, highlighting the relative contribution of predictors.*
+---
 
-### Skills Demonstrated
+## Key Insights / Findings
 
+- Including the sex variable altered both coefficient values and overall model interpretation.  
+- Sex was found to contribute meaningfully to variation in predicted disease progression.  
+- Regression coefficients provided interpretable insights into how physiological factors relate to outcomes.  
+- The analysis highlighted the importance of careful feature consideration when modelling biomedical data.  
+
+Overall, the project reinforced that seemingly simple variables can have important implications for interpretation and downstream decision-making.
+
+---
+
+## Skills Demonstrated
+
+**Analysis**
 - Exploratory data analysis and feature inspection  
-- Linear regression modelling and interpretation  
-- Thoughtful inclusion and assessment of feature relevance  
-- Python data science ecosystem: pandas, scikit-learn, matplotlib/seaborn  
-- Translating numerical modelling into real-world conclusions
+- Data cleaning and preparation for regression  
 
-### Requirements
+**Modelling**
+- Linear regression modelling  
+- Coefficient interpretation and comparison  
+
+**Evaluation**
+- Assessment of feature relevance and model behaviour  
+
+**Tools**
+- Python  
+- pandas  
+- scikit-learn  
+- matplotlib / seaborn  
+- Jupyter Notebook  
+
+---
+
+## Requirements
 
 Install the required Python packages with: `pip install -r requirements.txt`
+
+---
+
+## Why this project belongs in my portfolio
+This project demonstrates my ability to apply regression modelling thoughtfully in a biomedical context and to extend a standard task through careful questioning and interpretation.
+
+By examining the role of sex as a predictor — rather than accepting default model configurations — the analysis reflects an approach focused on understanding data, assumptions, and real-world implications, rather than optimisation alone.
+
